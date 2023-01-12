@@ -1,0 +1,9 @@
+F:\Practice Projects\C#\Bird Game\Flappy-Ball-Game\Flappy-Ball\bin\Debug\Flappy-Ball.exe
+F:\Practice Projects\C#\Bird Game\Flappy-Ball-Game\Flappy-Ball\bin\Debug\Flappy-Ball.pdb
+F:\Practice Projects\C#\Bird Game\Flappy-Ball-Game\Flappy-Ball\obj\Debug\Flappy-Ball.csproj.AssemblyReference.cache
+F:\Practice Projects\C#\Bird Game\Flappy-Ball-Game\Flappy-Ball\obj\Debug\Flappy_Ball.Form1.resources
+F:\Practice Projects\C#\Bird Game\Flappy-Ball-Game\Flappy-Ball\obj\Debug\Flappy_Ball.Properties.Resources.resources
+F:\Practice Projects\C#\Bird Game\Flappy-Ball-Game\Flappy-Ball\obj\Debug\Flappy-Ball.csproj.GenerateResource.cache
+F:\Practice Projects\C#\Bird Game\Flappy-Ball-Game\Flappy-Ball\obj\Debug\Flappy-Ball.csproj.CoreCompileInputs.cache
+F:\Practice Projects\C#\Bird Game\Flappy-Ball-Game\Flappy-Ball\obj\Debug\Flappy-Ball.exe
+F:\Practice Projects\C#\Bird Game\Flappy-Ball-Game\Flappy-Ball\obj\Debug\Flappy-Ball.pdb
