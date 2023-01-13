@@ -41,6 +41,7 @@ namespace Flappy_Ball
             this.upWall = new System.Windows.Forms.PictureBox();
             this.ball = new System.Windows.Forms.PictureBox();
             this.lblGameOver = new System.Windows.Forms.Label();
+            this.extraLife = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.life1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.life2)).BeginInit();
@@ -49,6 +50,7 @@ namespace Flappy_Ball
             ((System.ComponentModel.ISupportInitialize)(this.ground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.upWall)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ball)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.extraLife)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -158,12 +160,23 @@ namespace Flappy_Ball
             this.lblGameOver.TabIndex = 6;
             this.lblGameOver.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // extraLife
+            // 
+            this.extraLife.Image = global::Flappy_Ball.Properties.Resources.life;
+            this.extraLife.Location = new System.Drawing.Point(497, 230);
+            this.extraLife.Name = "extraLife";
+            this.extraLife.Size = new System.Drawing.Size(40, 40);
+            this.extraLife.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.extraLife.TabIndex = 1;
+            this.extraLife.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(562, 450);
+            this.Controls.Add(this.extraLife);
             this.Controls.Add(this.upWall);
             this.Controls.Add(this.downWall);
             this.Controls.Add(this.ball);
@@ -184,6 +197,7 @@ namespace Flappy_Ball
             ((System.ComponentModel.ISupportInitialize)(this.ground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.upWall)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ball)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.extraLife)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -201,6 +215,7 @@ namespace Flappy_Ball
         private System.Windows.Forms.Label lblScore;
         private System.Windows.Forms.Timer gameTime;
         private System.Windows.Forms.Label lblGameOver;
+        private System.Windows.Forms.PictureBox extraLife;
     }
 }
 

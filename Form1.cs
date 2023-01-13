@@ -33,6 +33,8 @@ namespace Flappy_Ball
             downWall.Left -= wallSpeed;
             upWall.Left -= wallSpeed;
 
+            extraLife.Left -= wallSpeed;
+
             if (upWall.Left < -150)
             {
                 upWall.Left = 450;
@@ -43,6 +45,7 @@ namespace Flappy_Ball
                 downWall.Left = 580;
                 gameScore += 10;
             }
+            
 
             if (ball.Bounds.IntersectsWith(upWall.Bounds) || ball.Bounds.IntersectsWith(downWall.Bounds) || ball.Bounds.IntersectsWith(ground.Bounds))
             {
@@ -50,6 +53,16 @@ namespace Flappy_Ball
             }
 
             lblScore.Text = "" + gameScore;
+
+            if (ball.Bounds.IntersectsWith(extraLife.Bounds) && lifeCount < 3)
+            {
+                extraLifeFunction();
+            }
+
+            if (extraLife.Left < 100)
+            {
+                extraLife.Left = 480;
+            }
         }
 
         private void keyUpEvent(object sender, KeyEventArgs e)
@@ -124,6 +137,12 @@ namespace Flappy_Ball
             {
                 ball.Visible = true;
             }
+        }
+
+        private void extraLifeFunction()
+        {
+            lifeCount++;
+            extraLife.Visible = false;
         }
     }
 }
