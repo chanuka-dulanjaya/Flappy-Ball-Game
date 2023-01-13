@@ -59,9 +59,24 @@ namespace Flappy_Ball
                 extraLifeFunction();
             }
 
-            if (extraLife.Left < 100)
+            if (extraLife.Left < -10)
             {
-                extraLife.Left = 480;
+                extraLife.Left = 1000;
+            }
+
+            if(lifeCount == 1)
+            {
+                life1.Visible = true;
+            }
+            
+            if(lifeCount == 2)
+            {
+                life2.Visible = true;
+            }
+            
+            if(lifeCount == 3)
+            {
+                life3.Visible = true;
             }
         }
 
@@ -141,8 +156,19 @@ namespace Flappy_Ball
 
         private void extraLifeFunction()
         {
-            lifeCount++;
-            extraLife.Visible = false;
+           if(lifeCount < 3)
+            {
+                lifeCount++;
+
+                if (extraLife.Bounds.IntersectsWith(downWall.Bounds))
+                {
+                    extraLife.Left = 1100;
+                }
+                else
+                {
+                    extraLife.Left = 1000;
+                }
+            }
         }
     }
 }
